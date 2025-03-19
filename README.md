@@ -106,7 +106,7 @@ export const Profile = () => {
 ✅ **Correct Naming Examples:**
 
 ```graphql
-query GetGuide($id: ID!) { ... }         # ✅ Fetches full guide details
+query GetGuide($id: ID!) { ... }             # ✅ Fetches full guide details
 query GetGuideEvents($guideId: ID!) { ... }  # ✅ Fetches related guide events
 query GetGuideImages($guideId: ID!) { ... }  # ✅ Fetches guide images
 ```
