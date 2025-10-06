@@ -12,7 +12,7 @@ A **feature-first** approach to building **scalable, maintainable, and predictab
 ✅ **No Unnecessary Abstractions** – Complexity is only introduced when necessary.\
 ✅ **Automation Over Convention** – Enforceable via ESLint/Prettier instead of manual rules.\
 
-📖 **Additional Resources:**
+**Additional Resources:**
 
 - [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb React Style Guide](https://airbnb.io/javascript/react/)
@@ -64,7 +64,7 @@ pages/profile/:accountHandle/guides  → Feature (route: `/profile/:accountHandl
 4️⃣ **Event Handlers & Functions**  
 5️⃣ **Return Statement (JSX)**
 
-✅ **Example Component:**
+**Example Component:**
 
 ```tsx
 export const Profile = () => {
@@ -104,15 +104,15 @@ export const Profile = () => {
 | **Feature-based Queries** | Inside `pages/featureName/hooks/` |
 | **Sitewide Queries**      | Inside `src/hooks/`               |
 
-✅ **Correct Naming Examples:**
+**Correct Naming Examples:**
 
 ```graphql
-query GetGuide($id: ID!) { ... }             # ✅ Fetches full guide details
-query GetGuideEvents($guideId: ID!) { ... }  # ✅ Fetches related guide events
-query GetGuideImages($guideId: ID!) { ... }  # ✅ Fetches guide images
+query GetGuide($id: ID!) { ... }             # Fetches full guide details
+query GetGuideEvents($guideId: ID!) { ... }  # Fetches related guide events
+query GetGuideImages($guideId: ID!) { ... }  # Fetches guide images
 ```
 
-📖 **Additional Resources:**
+**Additional Resources:**
 
 - [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
 
@@ -140,19 +140,19 @@ query GetGuideImages($guideId: ID!) { ... }  # ✅ Fetches guide images
 | **Usage**   | Accessed via `useFlag` hook                           |
 | **Cleanup** | Feature flags should be short-lived                   |
 
-📖 **Additional Resources:**
+**Additional Resources:**
 
 - [Feature Flags Best Practices](https://martinfowler.com/articles/feature-toggles.html)
 
 ---
 
-## ✍️ Comments & Documentation
+## Comments & Documentation
 
 ✅ **Code should be self-explanatory; avoid unnecessary comments.**  
 ✅ **Use JSDoc `@todo` for tracking future work.**  
 ✅ **Only document "why", not "what" the code does.**
 
-✅ **Example:**
+**Example:**
 
 ```ts
 /** @todo Remove this workaround when the new API version is available */
