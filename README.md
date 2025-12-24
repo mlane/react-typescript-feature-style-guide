@@ -6,11 +6,11 @@ A **feature-first** approach to building **scalable, maintainable, and predictab
 
 ## Core Principles
 
-✅ **Feature-First Development** – Features are self-contained and organized around routes.\
-✅ **Minimal Cognitive Load** – Engineers should immediately know where code belongs.\
-✅ **Predictability & Consistency** – Every feature follows the same structure.\
-✅ **No Unnecessary Abstractions** – Complexity is only introduced when necessary.\
-✅ **Automation Over Convention** – Enforceable via ESLint/Prettier instead of manual rules.\
+✅ **Feature-First Development** - Features are self-contained and organized around routes.\
+✅ **Minimal Cognitive Load** - Engineers should immediately know where code belongs.\
+✅ **Predictability & Consistency** - Every feature follows the same structure.\
+✅ **No Unnecessary Abstractions** - Complexity is only introduced when necessary.\
+✅ **Automation Over Convention** - Enforceable via ESLint/Prettier instead of manual rules.\
 
 **Additional Resources:**
 
@@ -51,7 +51,7 @@ pages/profile/:accountHandle/guides  → Feature (route: `/profile/:accountHandl
 
 ✅ **Flat structure:** No deep nesting inside features.\
 ✅ **Feature-scoped:** Hooks and components belong inside the feature they support.\
-✅ **No `common/` folder** – Instead, use `src/hooks/` for sitewide hooks and `src/components/` for reusable components.
+✅ **No `common/` folder** - Instead, use `src/hooks/` for sitewide hooks and `src/components/` for reusable components.
 
 ---
 
