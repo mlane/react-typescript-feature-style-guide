@@ -5,15 +5,13 @@ A **feature-first** approach to building **scalable, maintainable, and predictab
 ---
 
 ## Core Principles
-
-✅ **Feature-First Development** - Features are self-contained and organized around routes.\
-✅ **Minimal Cognitive Load** - Engineers should immediately know where code belongs.\
-✅ **Predictability & Consistency** - Every feature follows the same structure.\
-✅ **No Unnecessary Abstractions** - Complexity is only introduced when necessary.\
-✅ **Automation Over Convention** - Enforceable via ESLint/Prettier instead of manual rules.\
+- **Feature-First Development** - Features are self-contained and organized around routes.
+- **Minimal Cognitive Load** - Engineers should immediately know where code belongs.
+- **Predictability & Consistency** - Every feature follows the same structure.
+- **No Unnecessary Abstractions** - Complexity is only introduced when necessary.
+- **Automation Over Convention** - Enforceable via ESLint/Prettier instead of manual rules.
 
 **Additional Resources:**
-
 - [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb React Style Guide](https://airbnb.io/javascript/react/)
 - [My React TypeScript Style Guide](https://github.com/mlane/react-typescript-style-guide)
@@ -25,7 +23,6 @@ A **feature-first** approach to building **scalable, maintainable, and predictab
 ### **What is a Feature?**
 
 A **feature** is a **self-contained module** that represents:
-
 - A **route** (`/guides/:guideId`)
 - A **significant UI section**
 - **Reusable business logic specific to a domain**
@@ -49,20 +46,20 @@ pages/profile/:accountHandle/guides  → Feature (route: `/profile/:accountHandl
   ProfileGuides.tsx → Main component
 ```
 
-✅ **Flat structure:** No deep nesting inside features.\
-✅ **Feature-scoped:** Hooks and components belong inside the feature they support.\
-✅ **No `common/` folder** - Instead, use `src/hooks/` for sitewide hooks and `src/components/` for reusable components.
+- **Flat structure:** No deep nesting inside features.
+- **Feature-scoped:** Hooks and components belong inside the feature they support.
+- **No `common/` folder** - Instead, use `src/hooks/` for sitewide hooks and `src/components/` for reusable components.
 
 ---
 
 ## Component Structure
 
-**Ordering Inside a Component:**\
-1️⃣ **Hooks** (`useState`, `useEffect`, etc.)  
-2️⃣ **Local Variables** (constants, derived values)  
-3️⃣ **useEffect Hooks** (side effects, lifecycle logic)  
-4️⃣ **Event Handlers & Functions**  
-5️⃣ **Return Statement (JSX)**
+**Ordering Inside a Component:**
+1. **Hooks** (`useState`, `useEffect`, etc.)
+2. **Local Variables** (constants, derived values)
+3. **useEffect Hooks** (side effects, lifecycle logic)
+4. **Event Handlers & Functions**
+5. **Return Statement (JSX)**
 
 **Example Component:**
 
@@ -148,9 +145,9 @@ query GetGuideImages($guideId: ID!) { ... }  # Fetches guide images
 
 ## Comments & Documentation
 
-✅ **Code should be self-explanatory; avoid unnecessary comments.**  
-✅ **Use JSDoc `@todo` for tracking future work.**  
-✅ **Only document "why", not "what" the code does.**
+- **Code should be self-explanatory; avoid unnecessary comments.**
+- **Use JSDoc `@todo` for tracking future work.**
+- **Only document "why", not "what" the code does.**
 
 **Example:**
 
@@ -171,8 +168,8 @@ const getUserPreferences = async (userId: string) => {
 
 **This cheat sheet ensures clarity, predictability, and minimal cognitive load.**
 
-✅ **Keep rules minimal & enforceable.**\
-✅ **Follow automation-first principles.**\
-✅ **Structure code in a way that scales naturally.**
+- **Keep rules minimal & enforceable.**
+- **Follow automation-first principles.**
+- **Structure code in a way that scales naturally.**
 
 This is your definitive **React + TypeScript Feature-First Style Guide**, designed to **reduce thinking, improve efficiency, and create scalable applications effortlessly.**
