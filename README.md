@@ -15,6 +15,7 @@ A **feature-first** approach to building **scalable, maintainable, and predictab
 - [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb React Style Guide](https://airbnb.io/javascript/react/)
 - [My React TypeScript Style Guide](https://github.com/mlane/react-typescript-style-guide)
+- [Vercel React Best Practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)
 
 ---
 
